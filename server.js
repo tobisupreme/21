@@ -20,6 +20,7 @@ app.get("/api/:name", (req, res) => {
     res.json(rappers.taz)
   }
 })
-app.listen(PORT, () => {
+
+app.listen(process.environment.PORT || PORT, () => {
   console.log(`Running on http://localhost:${PORT}`)
 })
