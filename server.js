@@ -21,6 +21,6 @@ app.get("/api/:name", (req, res) => {
   }
 })
 
-app.listen(process.environment.PORT || PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Running on http://localhost:${PORT}`)
 })
