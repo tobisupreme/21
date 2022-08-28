@@ -4,16 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="js/main.js" defer></script> -->
-  <title>Document</title>
+  <script src="public/main.js" defer></script>
+  <title>Rapper Name Finder</title>
+
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>We outchea!</h1>
+  <header>
+    <nav>
+      <h1>We outchea!</h1>
+    </nav>
+  </header>
 
-  <form>
-    <input type="text">
-    <input type="button" value="Get name">
-    <h2>Birth Name:</h2>
+  <section class="hero">
+    <p class="hero-text">
+      Throw dirt on my name, and I still come out clean
+    </p>
+  </section>
+  <form id="form">
+    <input id="rapperName" type="text">
+    <button>Get name</button> 
+    <h2 id="namePlace" class="hidden">Birth Name: <span id="rapName"></span></h2>
   </form>
 </body>
 </html>
